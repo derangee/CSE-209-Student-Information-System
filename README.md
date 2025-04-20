@@ -1,5 +1,6 @@
 This project is a simple Student Information System built as part of the CSE-209 Database Management Systems course. 
 
+
 ⚙️ Tech Stack
 
 Frontend: HTML, CSS, JavaScript 
@@ -7,6 +8,8 @@ Frontend: HTML, CSS, JavaScript
 Backend: NodeJs, ExpressJs
 
 Database: MySQL 
+
+
 
 🚀 How to Run
 
@@ -17,6 +20,8 @@ Import the SQL file into your database
 Start the backend/server - run the command `node app.js`
 
 Open the project in your browser
+
+
 
 Team BitByByte : 
 
