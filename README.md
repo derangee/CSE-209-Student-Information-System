@@ -8,7 +8,7 @@ Database: MySQL
 🚀 How to Run
 Clone the repository
 Import the SQL file into your database
-Start the backend/server
+Start the backend/server - run the command `node app.js`
 Open the project in your browser
 
 Team BitByByte : 
