@@ -2,18 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Information System</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Student Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        hr {
+            border: 1px solid #eee;
+        }
+    </style>
 </head>
 <body>
+
+
     <h1>Student Information System</h1>
-    <form id="studentForm">
-        <input type="text" id="name" placeholder="Name" required>
-        <input type="text" id="roll" placeholder="Roll Number" required>
-        <button type="submit">Add Student</button>
-    </form>
-    <div id="studentList"></div>
+    <div class="container">
+
+        <h1>Add Student</h1>
+        <form id="studentForm">
+            <input type="text" id="studentName" placeholder="Student Name" required>
+            <input type="text" id="studentRoll" placeholder="Student Roll" required>
+            <button type="submit">Add Student</button>
+        </form>
+
+        <hr>
+
+        <h1>Add Department</h1>
+        <form id="departmentForm">
+            <input type="text" id="departmentName" placeholder="Department Name" required>
+            <button type="submit">Add Department</button>
+        </form>
+
+        <hr>
+
+        <h1>Add Course</h1>
+        <form id="courseForm">
+            <input type="text" id="courseName" placeholder="Course Name" required>
+            <input type="text" id="courseCode" placeholder="Course Code" required>
+            <input type="number" id="courseDepartmentId" placeholder="Department ID (optional)">
+            <button type="submit">Add Course</button>
+        </form>
+
+        <hr>
+
+        <h1>Add Grade</h1>
+        <form id="gradeForm">
+            <input type="number" id="gradeStudentId" placeholder="Student ID" required>
+            <input type="number" id="gradeCourseId" placeholder="Course ID" required>
+            <input type="text" id="gradeValue" placeholder="Grade" required>
+            <button type="submit">Add Grade</button>
+        </form>
+
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
